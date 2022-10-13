@@ -13,4 +13,5 @@
     <string name="B_mas">+</string>
     <string name="B_c">C</string>
     <string name="B_igual">=</string>
+    <string name="TV_resultado" />
 </resources>
