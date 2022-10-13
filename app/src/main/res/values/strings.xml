@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">calculadora</string>
+    <string name="B_0">0</string>
+    <string name="B_1">1</string>
+    <string name="B_2">2</string>
+    <string name="B_3">3</string>
+    <string name="B_4">4</string>
+    <string name="B_5">5</string>
+    <string name="B_6">6</string>
+    <string name="B_7">7</string>
+    <string name="B_8">8</string>
+    <string name="B_9">9</string>
+    <string name="B_mas">+</string>
+    <string name="B_c">C</string>
+    <string name="B_igual">=</string>
 </resources>
