@@ -55,6 +55,10 @@ public class MainActivity extends AppCompatActivity {
         TextView res = (TextView) findViewById(R.id.resultado);
         res.setText(res.getText()+"+");
     }
+    public void menos(View view) {
+        TextView res = (TextView) findViewById(R.id.resultado);
+        res.setText(res.getText()+"-");
+    }
     public void c(View view) {
         TextView res = (TextView) findViewById(R.id.resultado);
         res.setText("");
@@ -67,16 +71,17 @@ public class MainActivity extends AppCompatActivity {
         int mas;
         String num1;
         String num2;
-
-        mas = cadena.indexOf("+");
-        num1 = cadena.substring(0, (mas));
-        num2 = cadena.substring((mas)+1, cadena.length());
-        System.out.println(mas);
-        System.out.println(num1);
-        System.out.println(num2);
-
-
-        cadena = Integer.toString(Integer.parseInt(num1)+Integer.parseInt(num2));
+        if (cadena.contains("+")) {
+            mas = cadena.indexOf("+");
+            num1 = cadena.substring(0, (mas));
+            num2 = cadena.substring((mas)+1, cadena.length());
+            cadena = Integer.toString(Integer.parseInt(num1)+Integer.parseInt(num2));
+        } else if (cadena.contains("-")) {
+            mas = cadena.indexOf("-");
+            num1 = cadena.substring(0, (mas));
+            num2 = cadena.substring((mas)+1, cadena.length());
+            cadena = Integer.toString(Integer.parseInt(num1)-Integer.parseInt(num2));
+        }
         return cadena;
     }
 }
